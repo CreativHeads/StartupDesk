@@ -1,0 +1,74 @@
+{
+  "iteration": 1,
+  "summary": "All 9 lane artifacts (1 backend test, 8 browser checks) covering the 8 acceptance criteria passed. No bugs found.",
+  "passed": 9,
+  "failed": 0,
+  "retest_needed": false,
+  "bugs": [],
+  "action_items": [],
+  "checks": [
+    {
+      "criterion": "Public preview and API ingress are healthy (API contract)",
+      "name": "test_tscheck_api_root_health.py::test_api_root_returns_hello_world",
+      "lane": "backend",
+      "status": "passed",
+      "evidence": "GET http://localhost:8001/api/ -> 200 {\"message\": \"Hello World\"}"
+    },
+    {
+      "criterion": "StartupDesk reproduces the reference site's multi-page UAE business setup IA under the new brand; navigation reaches Home, Jurisdictions, Licenses, About, Pricing, Contact",
+      "name": "navigation-reaches-core-pages",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Home shows brand 'StartupDesk' + domain-label 'startupdesk.ae'; nav-link-jurisdictions/licenses/about/pricing/home and footer-link-contact each land on the matching page testid (services-page, licenses-page, about-page, cost-calculator-page, home-page, contact-page) with no blank renders."
+    },
+    {
+      "criterion": "All public inner pages and service content are available (catalog, 5 service details, licenses, calculator, about, contact)",
+      "name": "inner-pages-render-substantive-content",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Visited service-detail-page-{dubai-free-zone,spc-free-zone,shams-free-zone,mainland,offshore} via catalog cards, each rendering a non-empty heading and visible CTA; footer links to licenses/calculator/about/contact all render substantive testids (license-card-1, calculator-estimate, team-name-1, contact-advisory-form)."
+    },
+    {
+      "criterion": "Jurisdiction discovery is interactive (filter by Free Zone/Mainland/Offshore updates cards, opening a card reaches matching detail page)",
+      "name": "services-filter-and-detail-navigation",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "service-filter-free-zone/mainland/offshore toggles catalog grid membership (e.g. mainland/offshore cards absent under free-zone filter); clicking offshore card navigates to service-detail-page-offshore."
+    },
+    {
+      "criterion": "Homepage package selector works (Free Zone/Mainland/Offshore updates price + copy)",
+      "name": "homepage-package-selector-updates-price",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "hero-price cycles AED 4,999 -> AED 14,500 (Mainland) -> AED 6,999 (Offshore) -> back to AED 4,999 (Free Zone) as package-tab-* buttons are clicked."
+    },
+    {
+      "criterion": "Cost calculator works (jurisdiction, visa count, workspace update indicative AED estimate)",
+      "name": "cost-calculator-updates-estimate",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "calculator-estimate progresses AED 12,199 -> 16,700 (Dubai Mainland) -> 25,500 (5 visas) -> 32,000 (Private office), matching basePrice + visas*2200 + office add-on formula; no navigation/errors."
+    },
+    {
+      "criterion": "Contact form validates and succeeds (inline errors then local success confirmation + toast)",
+      "name": "contact-form-validates-and-succeeds",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Empty submit shows contact-error-name/email/phone; valid tscheck-prefixed name/email/phone submit reveals contact-success-toast and the 'ready for review' confirmation text."
+    },
+    {
+      "criterion": "Responsive navigation works (desktop nav without toggle; mobile toggle opens panel, links route)",
+      "name": "responsive-navigation-toggle",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "At 1280x800 desktop-navigation visible / mobile-menu-toggle-button hidden; at 390x844 the reverse, and clicking the toggle then mobile-nav-link-about opens mobile-navigation-panel and routes to about-page."
+    },
+    {
+      "criterion": "Public preview and API ingress are healthy (browser-facing: preview loads clean, API reachable from it)",
+      "name": "public-preview-loads-healthy",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Loaded https://startup-desk-preview.preview.emergentagent.com/ with strict console checking enabled (no console/page errors), home-page + brand visible, and in-page fetch of /api/ returned {\"message\":\"Hello World\"}."
+    }
+  ]
+}

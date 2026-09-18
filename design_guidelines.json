@@ -1,0 +1,382 @@
+{
+  "brand": {
+    "name": "StartupDesk",
+    "domain": "startupdesk.ae",
+    "tagline": "The Premier UAE Business Advisory & Fast-Track Formation Engine",
+    "value_proposition": "Scale, establish, and structure your corporate presence in Dubai and across UAE Free Zones with zero hidden costs, end-to-end legal compliance, and strategic growth advisory.",
+    "emotional_archetype": "Architectural Prestige & Precision (Swiss High-Contrast + Subtle Gold Accent)"
+  },
+  "color_palette": {
+    "mode": "Light Theme Core with Dark Obsidian Feature Surfaces",
+    "primary": {
+      "main": "#0F172A",
+      "hover": "#1E293B",
+      "active": "#020617",
+      "description": "Deep Corporate Slate Black for high-authority typography & dominant structural elements"
+    },
+    "brand_accent": {
+      "emerald_gold": "#059669",
+      "gold_glow": "#D97706",
+      "emerald_light": "#ECFDF5",
+      "sky_accent": "#2563EB",
+      "description": "Vibrant emerald green and warm amber accents representing growth, UAE market prosperity, and precision"
+    },
+    "backgrounds": {
+      "page_bg": "#FAFAFA",
+      "card_bg": "#FFFFFF",
+      "section_dark": "#0B0F19",
+      "glass_header": "rgba(255, 255, 255, 0.85)",
+      "dark_card_bg": "#111827"
+    },
+    "borders": {
+      "subtle": "#E2E8F0",
+      "hover": "#CBD5E1",
+      "accent": "rgba(16, 185, 129, 0.3)"
+    },
+    "text": {
+      "primary": "#0F172A",
+      "secondary": "#475569",
+      "muted": "#64748B",
+      "inverse": "#F8FAFC"
+    },
+    "forbidden_colors": [
+      "#7351B7",
+      "#1B93A4"
+    ]
+  },
+  "typography": {
+    "font_families": {
+      "headings": "Cabinet Grotesk / Plus Jakarta Sans, sans-serif",
+      "body": "DM Sans / Inter, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "scale": {
+      "h1_hero": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight",
+      "h2_section": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight",
+      "h3_card": "text-xl sm:text-2xl font-semibold",
+      "h4_sub": "text-lg font-medium",
+      "body_lg": "text-lg leading-relaxed text-slate-600 dark:text-slate-300",
+      "body_base": "text-base leading-normal text-slate-600 dark:text-slate-300",
+      "label_tiny": "text-xs font-mono uppercase tracking-[0.2em] text-emerald-600 font-semibold"
+    },
+    "rules": "No generic centered text blocks on full width. Headlines must always use tracking-tight or tracking-tighter."
+  },
+  "layout_and_spacing": {
+    "spacing_scale": "p-4, p-6, p-8, p-12, p-16, p-24, p-32",
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "bento_grid_mode": "MODE A: TETRIS GRID for features, service pricing, and jurisdiction comparison cards",
+    "padding_rule": "Containers with 1px border MUST have internal padding p-6 or p-8 to prevent edge text clipping"
+  },
+  "navigation": {
+    "component": "Sticky Glassmorphism Header",
+    "styles": "backdrop-blur-xl bg-white/85 dark:bg-slate-950/85 border-b border-slate-200/80 dark:border-slate-800 z-50 fixed top-0 left-0 right-0 h-20 px-6 flex items-center justify-between",
+    "items": [
+      {
+        "label": "Home",
+        "path": "/"
+      },
+      {
+        "label": "Jurisdictions & Free Zones",
+        "path": "/services"
+      },
+      {
+        "label": "Popular Licenses",
+        "path": "/licenses"
+      },
+      {
+        "label": "About StartupDesk",
+        "path": "/about"
+      },
+      {
+        "label": "Calculator & Pricing",
+        "path": "/cost-calculator"
+      },
+      {
+        "label": "Contact",
+        "path": "/contact"
+      }
+    ],
+    "desktop_cta": {
+      "label": "Get Free Strategy Call",
+      "path": "/contact",
+      "test_id": "nav-cta-button",
+      "style": "bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2.5 px-5 rounded-lg transition-all shadow-sm hover:shadow-emerald-500/20"
+    }
+  },
+  "pages_and_flows": {
+    "homepage": {
+      "route": "/",
+      "sections": [
+        {
+          "id": "hero",
+          "headline": "Launch & Scale Your Enterprise in Dubai with Authority",
+          "subheadline": "StartupDesk is the premier UAE business setup and advisory platform (startupdesk.ae). Zero hidden fees, guaranteed bank account support, and fast-track company formation starting at AED 4,999.",
+          "interactive_elements": [
+            "Quick Package Selector Filter Tabs (Free Zone, Mainland, Offshore)",
+            "Instant Quote Drawer Modal trigger",
+            "Live Dubai Skyline backdrop with soft gradient overlay"
+          ],
+          "test_id": "hero-section"
+        },
+        {
+          "id": "trust_bar",
+          "title": "Trusted by 1,200+ Global Founders, VC Backed Startups & Enterprises",
+          "metrics": [
+            "1,200+ Companies Formed",
+            "99.4% Bank Approval Rate",
+            "3-5 Days Avg Turnaround",
+            "100% Tax Compliant Structuring"
+          ]
+        },
+        {
+          "id": "value_pillars",
+          "title": "Why Global Founders Choose StartupDesk",
+          "pillars": [
+            {
+              "title": "Zero Service Fee Option",
+              "desc": "Direct-to-authority transparent pricing without middleman markups."
+            },
+            {
+              "title": "Turnkey Banking Setup",
+              "desc": "Guaranteed introductions & compliance dossier preparation for UAE tier-1 banks."
+            },
+            {
+              "title": "Full Corporate Governance",
+              "desc": "Visas, lease agreements, legal translations, and office flexi-desks included."
+            },
+            {
+              "title": "100% Remote Onboarding",
+              "desc": "Incorporate from anywhere in the world with e-signatures & instant verification."
+            }
+          ]
+        },
+        {
+          "id": "jurisdictions_bento",
+          "title": "Popular UAE Jurisdictions & Free Zones",
+          "items": [
+            {
+              "name": "Dubai Free Zone (IFZA / DMCC / DDA)",
+              "price": "Starting AED 9,999",
+              "badge": "Highest Prestige",
+              "features": [
+                "Up to 3 Activities",
+                "Up to 49 Shareholders",
+                "Free Flexi-Desk",
+                "VIP Bank Introduction"
+              ],
+              "link": "/services/dubai-free-zone"
+            },
+            {
+              "name": "SPC Free Zone (Sharjah Publishing City)",
+              "price": "Starting AED 5,750",
+              "badge": "Fastest 24-hr Approval",
+              "features": [
+                "Up to 5 Business Activities",
+                "Free Company Stamp",
+                "Instant E-License"
+              ],
+              "link": "/services/spc-free-zone"
+            },
+            {
+              "name": "Sharjah Media City (SHAMS)",
+              "price": "Starting AED 5,750",
+              "badge": "Popular for Tech & Creative",
+              "features": [
+                "10 Business Activities Combined",
+                "No Physical Office Needed",
+                "Flexi Desk Included"
+              ],
+              "link": "/services/shams-free-zone"
+            },
+            {
+              "name": "UAE Offshore (RAK ICC)",
+              "price": "Starting AED 6,999",
+              "badge": "Asset Protection",
+              "features": [
+                "100% Tax Exemption",
+                "Global Asset Holding",
+                "Complete Confidentiality"
+              ],
+              "link": "/services/offshore"
+            },
+            {
+              "name": "UAE Mainland (Dubai DED)",
+              "price": "Starting AED 14,500",
+              "badge": "Direct UAE Local Trading",
+              "features": [
+                "100% Foreign Ownership",
+                "Trade Anywhere in UAE",
+                "Government Contract Eligibility"
+              ],
+              "link": "/services/mainland"
+            }
+          ]
+        },
+        {
+          "id": "interactive_calculator_teaser",
+          "title": "Calculate Your Custom Company Formation Package",
+          "interactive": "Dynamic sliders for Visa count (0 to 10+), Activity types, and Physical Office requirements with live cost estimation."
+        },
+        {
+          "id": "step_process",
+          "title": "Simple 3-Step Setup Process",
+          "steps": [
+            {
+              "num": "01",
+              "title": "Strategic Consultation",
+              "desc": "Select legal structure & license activities with our senior UAE corporate advisors."
+            },
+            {
+              "num": "02",
+              "title": "Document Filing & Verification",
+              "desc": "We submit pass-through applications directly to government registrars."
+            },
+            {
+              "num": "03",
+              "title": "License & Visa Issuance",
+              "desc": "Receive your trade license, corporate seal, bank account, and investor visas."
+            }
+          ]
+        },
+        {
+          "id": "popular_licenses",
+          "title": "Popular Business Licenses in UAE",
+          "licenses": [
+            "General Trading License",
+            "E-Commerce & Digital Tech License",
+            "Professional Advisory & Strategic Consultancy",
+            "Freelance & Independent Practitioner Permit"
+          ]
+        },
+        {
+          "id": "contact_lead_cta",
+          "title": "Ready to Launch on startupdesk.ae?",
+          "subtitle": "Get a customized quote within 15 minutes from our team in Dubai."
+        }
+      ]
+    },
+    "services_page": {
+      "route": "/services",
+      "title": "UAE Company Formation & Advisory Solutions",
+      "description": "Explore tailored business setup packages across Dubai Mainland, Top 10 UAE Free Zones, and Offshore Asset Protection structures.",
+      "components": [
+        "Filterable Jurisdiction Catalog",
+        "Side-by-side Pricing Matrix Table",
+        "Direct Contact Enquiry Drawer per package"
+      ]
+    },
+    "service_detail_pages": [
+      {
+        "route": "/services/dubai-free-zone",
+        "title": "Dubai Free Zone Company Setup",
+        "price": "AED 9,999",
+        "highlights": "Ideal for international tech startups, finance firms, and luxury brands wanting top Dubai address."
+      },
+      {
+        "route": "/services/spc-free-zone",
+        "title": "SPC Free Zone Formation",
+        "price": "AED 5,750",
+        "highlights": "Same-day license issuance with up to 5 combined business activities."
+      },
+      {
+        "route": "/services/mainland",
+        "title": "Dubai Mainland Company Setup (DED)",
+        "price": "AED 14,500",
+        "highlights": "Full access to local UAE markets and unrestricted government tender bidding."
+      },
+      {
+        "route": "/services/offshore",
+        "title": "UAE Offshore Company (RAK ICC)",
+        "price": "AED 6,999",
+        "highlights": "International asset holding, tax optimization, and wealth structuring."
+      }
+    ],
+    "licenses_page": {
+      "route": "/licenses",
+      "title": "UAE Business Licenses Directory",
+      "content": "Detailed overview of General Trading, E-commerce, Professional Consultancy, Commercial, Tech, and Freelance Permits."
+    },
+    "cost_calculator_page": {
+      "route": "/cost-calculator",
+      "title": "UAE Business Setup Cost Estimator",
+      "features": "Interactive step-by-step wizard to compute setup fees based on Jurisdiction, Visa allocation, Shareholder count, and Office space requirements."
+    },
+    "about_page": {
+      "route": "/about",
+      "title": "About StartupDesk (startupdesk.ae)",
+      "story": "StartupDesk is a modern B2B advisory firm built to remove friction for entrepreneurs and enterprises expanding into Dubai and the Middle East.",
+      "leadership_team": [
+        {
+          "name": "Tariq Al-Mansoori",
+          "role": "Managing Partner & Strategic Advisory"
+        },
+        {
+          "name": "Elena Vance",
+          "role": "Head of Corporate Governance & Compliance"
+        },
+        {
+          "name": "Marcus Chen",
+          "role": "VP of Venture Structuring"
+        }
+      ]
+    },
+    "contact_page": {
+      "route": "/contact",
+      "title": "Speak with a StartupDesk Specialist",
+      "form_fields": [
+        "Full Name (Required)",
+        "Work Email (Required)",
+        "Phone / WhatsApp Number with Country Code (Required)",
+        "Enquiry Category (Dropdown: Company Formation, Banking Support, Visa Services, Tax & Accounting)",
+        "Timeline (Dropdown: Immediately, Within a month, After 1 month)",
+        "Visa Requirement (Dropdown: 0 to 10+ Visas)",
+        "Additional Notes / Message"
+      ],
+      "validation_rules": "Client-side form validation with real-time feedback and local toast notification + interactive confirmation dialog upon submit.",
+      "test_ids": {
+        "form": "contact-advisory-form",
+        "name": "contact-input-name",
+        "email": "contact-input-email",
+        "phone": "contact-input-phone",
+        "category": "contact-select-category",
+        "timeline": "contact-select-timeline",
+        "visas": "contact-select-visas",
+        "submit_button": "contact-form-submit-button",
+        "success_toast": "contact-success-toast"
+      }
+    }
+  },
+  "component_guidelines": {
+    "buttons": "Use pill or crisp rounded-lg style with active states, focus rings, and explicit hover text colors (e.g., hover:bg-slate-900 hover:text-white). Never rely on color inheritance.",
+    "cards": "Subtle 1px border (border-slate-200 dark:border-slate-800) with hover lift (-translate-y-1) and shadow-lg on hover. Ensure internal padding p-6 or p-8.",
+    "form_controls": "Use custom Shadcn UI inputs, selects, and checkboxes styled to match StartupDesk emerald & slate palette. HTML native select is strictly disallowed.",
+    "modals_and_drawers": "Use Shadcn Dialog and Sheet with backdrop-blur-md for quick quote consultation drawers.",
+    "toast_notifications": "Use Sonner for client feedback upon form submissions or quote calculations."
+  },
+  "media_assets": {
+    "hero_skyline": "https://images.unsplash.com/flagged/photo-1559717201-fbb671ff56b7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ6NDJ8MHwxfHNlYXJjaHw0fHxkdWJhaSUyMHNreWxpbmUlMjBsdXh1cnklMjBhcmNoaXRlY3R1cmUlMjBidXNpbmVzc3xlbnwwfHx8fDE3ODk3MjAyMjd8MA&ixlib=rb-4.1.0&q=85",
+    "advisory_team_meeting": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxNzV8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBzdGFydHVwJTIwdGVhbSUyMGJ1c2luZXNzJTIwYWR2aXNvcnklMjBtZWV0aW5nfGVufDB8fHx8MTc4OTcyMDIyOHww&ixlib=rb-4.1.0&q=85",
+    "modern_office_hallway": "https://images.unsplash.com/photo-1554232456-8727aae0cfa4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTk1NzZ8MHwxfHNlYXJjaHwyfHxjb3Jwb3JhdGUlMjBzdHJhdGVneSUyMGZpbmFuY2lhbCUyMGFkdmlzb3J5JTIwY29uc3VsdGFudCUyMG9mZmljZXxlbnwwfHx8fDE3ODk3MjAyMzV8MA&ixlib=rb-4.1.0&q=85",
+    "executive_meeting": "https://images.pexels.com/photos/6592694/pexels-photo-6592694.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "financial_charts_discussion": "https://images.pexels.com/photos/7876666/pexels-photo-7876666.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  "3d_and_motion_strategy": {
+    "libraries": [
+      "framer-motion",
+      "lucide-react",
+      "recharts"
+    ],
+    "motion_rules": "Micro-interactions on buttons, subtle scroll entrance staggers with opacity and y-offset (15px), and interactive financial charts for cost estimates."
+  },
+  "accessibility_and_testing": {
+    "data_test_id_convention": "All interactive buttons, links, form inputs, route links, and key stats must include explicit data-testid attributes formatted in kebab-case.",
+    "wcag_compliance": "Normal text contrast ratio must exceed 4.5:1 against backgrounds. Focus states must feature outline-none ring-2 ring-emerald-500 ring-offset-2."
+  },
+  "instructions_to_main_agent": [
+    "Build a complete multi-page React application for StartupDesk (startupdesk.ae) with React Router.",
+    "Implement all routes: Home (/), Services Catalog (/services), Service Details (/services/:id), Licenses Directory (/licenses), Cost Calculator (/cost-calculator), About (/about), and Contact (/contact).",
+    "Ensure client-side contact form validation with real-time error messages, local demo submission handling, and Sonner toast notification feedback.",
+    "Use data-testid on all interactive elements as detailed in the accessibility section.",
+    "Preserve the exact information architecture of zone10x.com while delivering a modernized, high-end StartupDesk B2B aesthetic."
+  ]
+}
