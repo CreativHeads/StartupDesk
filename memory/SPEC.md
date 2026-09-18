@@ -20,6 +20,7 @@ Service and license content is local typed frontend data in `frontend/src/lib/si
 2. Visitor filters jurisdiction cards and opens a detail page.
 3. Visitor adjusts the calculator and receives a live indicative estimate.
 4. Visitor completes contact form validation and sees local success feedback.
+5. Desktop visitors use Zone10X-inspired Free Zone, Offshore, Mainland, Other Services, and Resources dropdowns; mobile visitors use the same hierarchy in accordion navigation.
 
 ## Auth and roles
 No authentication or gated areas.

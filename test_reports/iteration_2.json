@@ -1,0 +1,60 @@
+{
+  "iteration": 2,
+  "summary": "All 7 browser checks covering the 7 header/navigation acceptance criteria passed. No backend-bearing criteria in this matrix (pure client-side routing/UI). No bugs found.",
+  "passed": 7,
+  "failed": 0,
+  "retest_needed": false,
+  "bugs": [],
+  "action_items": [],
+  "checks": [
+    {
+      "criterion": "Desktop header follows the Zone10X-style category hierarchy",
+      "name": "desktop-header-category-hierarchy",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "At 1440x900, desktop-navigation shows desktop-menu-{free-zone,offshore,mainland,other-services,resources} with correct labels, plus header-phone-link and nav-cta-button ('Enquire now') visible."
+    },
+    {
+      "criterion": "Free Zone opens a full multi-column mega-menu",
+      "name": "free-zone-mega-menu-columns",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Hovering desktop-menu-free-zone reveals desktop-dropdown-free-zone with 4 columns (Dubai, Abu Dhabi, Sharjah, Other Emirates) via desktop-free-zone-column-1..4 and a visible desktop-free-zone-view-all compare-all CTA."
+    },
+    {
+      "criterion": "Compact dropdown categories work",
+      "name": "compact-dropdown-categories",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Hovering desktop-menu-{offshore,mainland,other-services,resources} each reveal their respective desktop-dropdown-* containing expected rewritten labels (JAFZA Offshore/RAK ICC, Dubai Mainland/Fujairah Mainland, Accounting & bookkeeping/Corporate tax advisory, About us/Setup FAQs/Business license guide)."
+    },
+    {
+      "criterion": "Available service links open matching detail pages",
+      "name": "service-detail-links-open-matching-pages",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "SPC Free Zone link -> /services/spc-free-zone; SHAMS Media City link -> /services/shams-free-zone; Dubai Free Zone overview -> /services/dubai-free-zone; JAFZA Offshore -> /services/offshore; Dubai Mainland -> /services/mainland. All URL assertions passed."
+    },
+    {
+      "criterion": "Remaining submenu items route to relevant existing content",
+      "name": "remaining-submenu-items-route-to-existing-content",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Meydan Free Zone (unsupported) -> /services#services-catalog; Accounting & bookkeeping -> /contact?topic=accounting; About us -> /about; Setup FAQs -> /services#services-comparison; Business license guide -> /licenses. All navigated as expected."
+    },
+    {
+      "criterion": "Mobile navigation uses accordions",
+      "name": "mobile-navigation-accordion-flow",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "At 390x844, mobile-menu-toggle-button opens mobile-navigation-panel; expanding mobile-menu-offshore then mobile-menu-mainland shows mainland's dropdown while offshore's dropdown collapses (independent accordions); clicking mobile-mainland-link-1-1 closes the panel and navigates to /services/mainland."
+    },
+    {
+      "criterion": "Responsive header controls do not overlap",
+      "name": "responsive-header-controls-no-overlap",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "At 1440x900 desktop-navigation and desktop-header-actions are visible while mobile-menu-toggle-button is hidden; at 390x844 desktop-navigation is hidden while mobile-menu-toggle-button is visible; brand-home-link remains visible at both widths."
+    }
+  ]
+}
